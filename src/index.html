@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Vero, a UX Designer</title>
+    <link href="./css/output.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <script src="./js/functions.js" defer></script>
+</head>
+
+<body>
+    <!-- Floating blobs in background -->
+    <div class="deco deco-1"></div>
+    <div class="deco deco-2"></div>
+    <div class="deco deco-3"></div>
+
+    <div class="layout">
+
+        <!-- SIDE PANEL -->
+        <aside class="side-panel">
+
+            <div class="avatar-wrap">
+                <div class="avatar">VR</div>
+                <div class="name">Verónica Rodríguez</div>
+                <span class="role-badge">UX Designer</span>
+            </div>
+
+            <div class="info-section">
+                <h4>Details</h4>
+
+                <div class="info-item">
+                    <div class="info-icon icon-pink">
+                        <i class="ph ph-map-pin"></i>
+                    </div>
+                    <span>México</span>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon icon-lav">
+                        <i class="ph ph-briefcase"></i>
+                    </div>
+                    <span>5+ years of experience</span>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon icon-sky">
+                        <i class="ph ph-globe"></i>
+                    </div>
+                    <span>Spanish / English</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="info-section">
+                    <h4>Contact</h4>
+                    <div class="info-item">
+                        <div class="info-icon icon-pink">
+                            <i class="ph ph-envelope"></i>
+                        </div>
+                        <span style="font-size:.73rem;">vero.rodzn@gmail.com</span>
+                    </div>
+                </div>
+
+        </aside>
+
+        <!-- FOLDER AREA -->
+        <div class="folder-area">
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab active" data-tab="about">
+                    <span class="tab-dot" style="background:var(--pink)"></span>
+                    About Me
+                </div>
+                <!-- 
+        <div class="tab" data-tab="skills">
+          <span class="tab-dot" style="background:var(--lavender)"></span>
+          Skills
+        </div>
+        -->
+                <div class="tab" data-tab="projects">
+                    <span class="tab-dot" style="background:var(--sky)"></span>
+                    Projects
+                </div>
+            </div>
+
+            <!-- Folder Body -->
+            <div class="folder-body">
+
+                <!-- ABOUT PANEL -->
+                <div class="panel active" id="panel-about">
+                    <div class="about-hero">
+                        <div class="about-text">
+                            <p class="eyebrow">Hello, world</p>
+                            <h1 class="hero-title">
+                                I'm Vero,<br>
+                                <em>a UX designer</em>
+                            </h1>
+                            <p class="about-bio">
+                                I'm a UX Designer based in Mexico with a background in Graphic Design, focused on
+                                creating intuitive and engaging digital experiences.
+                                I enjoy turning ideas into thoughtful designs and bringing them to life, with front-end
+                                development experience that helps me design with implementation in mind.
+                            </p>
+                            <div class="interest-chips">
+                                <span class="chip chip-pink">✦ User Research</span>
+                                <span class="chip chip-lav">✦ Wireframing</span>
+                                <span class="chip chip-sky">✦ Prototyping</span>
+                                <span class="chip chip-mint">✦ Interaction Design</span>
+                                <span class="chip chip-pink">✦ Usability Testing</span>
+                                <span class="chip chip-lav">✦ Responsive Design</span>
+                                <span class="chip chip-sky">✦ User Flow & Journey Mapping</span>
+
+                            </div>
+                        </div>
+                        <div class="about-illustration">🎨</div>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-num">10 +</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">2 +</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECTS PANEL -->
+                <div class="panel" id="panel-projects">
+                    <div class="panel-header">
+                        <p class="panel-eyebrow">A selection of my work</p>
+                        <h2 class="panel-title">Featured <span>Projects</span></h2>
+                    </div>
+
+                    <div class="projects-grid">
+
+                        <div class="project-card">
+                            <a href="./projects/irys-ds.html" class="main-card-link" aria-label="View Project"></a>
+                            <img src="./img/irysds.png" alt="Irys Design System Thumbnail" class="project-thumb">
+                            <!-- <div class="project-thumb" style="background:linear-gradient(135deg,#fde8f2,#ede8fd)"></div> -->
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="project-tag chip-pink">UX</span>
+                                    <span class="project-tag chip-lav">UI</span>
+                                    <span class="project-tag chip-sky">Design Lead</span>
+                                </div>
+                                <div class="project-name">Irys Insurtech: Design System</div>
+                                <div class="project-desc">A scalable design system that unified brand, streamlined
+                                    guidelines, and simplified developer collaboration.</div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="./projects/irys-ds.html" class="project-link">View Project →</a>
+                                <span style="font-size:.7rem;color:var(--muted);">2025</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <a href="./projects/irys-project.html" class="main-card-link" aria-label="View Project"></a>
+                            <img src="./img/irysproject.png" alt="Irys Thumbnail" class="project-thumb">
+                            <!-- <div class="project-thumb" style="background:linear-gradient(135deg,#e4f3fd,#e4fdf3)">☁️ </div> -->
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="project-tag chip-sky">UX</span>
+                                    <span class="project-tag chip-mint">UI</span>
+                                    <span class="project-tag chip-lav">Design Lead</span>
+                                </div>
+                                <div class="project-name">Irys Insurtech: Redesigning the Agent Experience</div>
+                                <div class="project-desc">Responsible for the end-to-end UX, I simplified workflows and
+                                    enhanced usability to create a tool that redefines how agents collaborate and focus
+                                    on what matters most.</div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#" class="project-link">View Project →</a>
+                                <span style="font-size:.7rem;color:var(--muted);">2025</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <a href="./projects/chefcitos.html" class="main-card-link" aria-label="View Project"></a>
+                            <!-- <img src="./img/chefcitos.png" alt="Chefcitos Thumbnail" class="project-thumb"> -->
+                            <div class="project-thumb" style="background:linear-gradient(135deg,#ede8fd,#fde8f2)">
+                                <i class="ph ph-chef-hat" style="color: #c06090;"></i>
+                            </div> 
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="project-tag chip-lav">UX</span>
+                                    <span class="project-tag chip-pink">UI</span>
+                                    <span class="project-tag chip-sky">Design Lead</span>
+                                    <span class="project-tag chip-lav">Front-end Developer</span>
+                                </div>
+                                <div class="project-name">Chefcitos: Designing a Seamless Culinary Experience</div>
+                                <div class="project-desc">Led the UX/UI design and contributed to the front-end
+                                    development of a recipe platform that allows users to explore, share, and discover
+                                    recipes, making cooking more accessible and enjoyable.</div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#" class="project-link">View Project →</a>
+                                <span style="font-size:.7rem;color:var(--muted);">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /folder-body -->
+        </div><!-- /folder-area -->
+    </div><!-- /layout -->
+</body>
+
+</html>
