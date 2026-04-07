@@ -464,3 +464,64 @@ body::before {
   background: rgba(200, 180, 240, .4);
   border-radius: 99px;
 }
+
+/* Image Modal */
+.img-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(30, 20, 50, .85);
+  backdrop-filter: blur(12px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: zoom-out;
+}
+
+.img-modal.open {
+  display: flex;
+  animation: fadeIn .2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal-img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.5);
+  object-fit: contain;
+  animation: zoomIn .25s cubic-bezier(.34,1.56,.64,1);
+  cursor: default;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(.85); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: rgba(255,255,255,.15);
+  border: 1.5px solid rgba(255,255,255,.25);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.modal-close:hover {
+  background: rgba(255,255,255,.3);
+}
