@@ -121,7 +121,7 @@ body::before {
   backdrop-filter: blur(12px);
   border: 1.5px solid rgba(255, 255, 255, .9);
   border-radius: 99px;
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--muted);
   text-decoration: none;
@@ -188,7 +188,7 @@ body::before {
 }
 
 .tag {
-  font-size: .62rem;
+  font-size: .7rem;
   font-weight: 400;
   letter-spacing: .07em;
   text-transform: uppercase;
@@ -226,7 +226,7 @@ body::before {
 }
 
 .project-subtitle {
-  font-size: .88rem;
+  font-size: 1rem;
   color: var(--muted);
   line-height: 1.6;
 }
@@ -239,7 +239,7 @@ body::before {
 }
 
 .meta-label {
-  font-size: .58rem;
+  font-size: .7rem;
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--muted);
@@ -247,7 +247,7 @@ body::before {
 }
 
 .meta-value {
-  font-size: .82rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text);
 }
@@ -266,7 +266,7 @@ body::before {
 
 .card-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: var(--text);
   margin-bottom: 14px;
   display: flex;
@@ -281,11 +281,11 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .body-text {
-  font-size: .88rem;
+  font-size: 1rem;
   line-height: 1.85;
   color: var(--muted);
 }
@@ -299,7 +299,7 @@ body::before {
 .list-element {
     display: flex;
     gap: 8px;
-    font-size: .78rem;
+    font-size: 1rem;
 }
 
 .list-element i {
@@ -341,7 +341,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: .75rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   flex-shrink: 0;
@@ -350,13 +350,13 @@ body::before {
 
 .step-title {
   font-weight: 600;
-  font-size: .88rem;
+  font-size: 1.2rem;
   color: var(--text);
   margin-bottom: 4px;
 }
 
 .step-desc {
-  font-size: .82rem;
+  font-size: 1rem;
   color: var(--muted);
   line-height: 1.7;
 }
@@ -364,7 +364,7 @@ body::before {
 /* Image gallery */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
@@ -375,9 +375,11 @@ body::before {
 }
 
 .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
   border-radius: 14px;
-  aspect-ratio: 4/3;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
